@@ -4,23 +4,29 @@ using UnityEngine;
 
 public class InputManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public PlayerMovement blackPlayerMovement;
+    public PlayerMovement redPlayerMovement;
+    public float initialXPos;
+    public float xOffset;
 
     // Update is called once per frame
     void Update()
     {
         if (Input.GetMouseButtonDown(0))
         {
-            
+            initialXPos = Input.mousePosition.x;
+            Debug.Log("Bastý");
         }
 
-        if (Input.GetMouseButtonUp(0))
+        if (Input.GetMouseButton(0))
         {
+            Debug.Log("basýlýyor");
+            xOffset = Input.mousePosition.x - initialXPos;
+
 
         }
+        redPlayerMovement.Move(xOffset);
+        blackPlayerMovement.Move(-xOffset);
+
     }
 }

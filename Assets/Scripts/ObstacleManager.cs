@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class ObstacleManager : MonoBehaviour
 {
+    public Player player;
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            Debug.Log("Collected");
+            ScoreManager.Instance.UpdateDisplayText();
+            player.Upscale();
         }
     }
 }
