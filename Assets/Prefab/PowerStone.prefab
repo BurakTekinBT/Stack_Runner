@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2494468048079558054}
   - component: {fileID: -1265167678838967992}
   - component: {fileID: 3636093023794922481}
+  - component: {fileID: -6380734727682513681}
   m_Layer: 0
   m_Name: PowerStone
   m_TagString: Collectible
@@ -97,6 +98,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c41ad66c9c0b16646bf5000373d7b852, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
 --- !u!136 &3636093023794922481
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -111,3 +113,16 @@ CapsuleCollider:
   m_Height: 0.6209782
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0.12954661}
+--- !u!114 &-6380734727682513681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4151998937273185395}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb4af89dd3bb68d49bda4a58b2c94385, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mergedPlayer: {fileID: 0}

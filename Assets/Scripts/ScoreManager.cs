@@ -5,18 +5,14 @@ using UnityEngine;
 
 public class ScoreManager : MonoBehaviour
 {
+
     public TextMeshProUGUI powerText;
-
     private int stackCount = 0;
-
     public static ScoreManager Instance;
-
     private void Awake()
     {
         Instance = this;
     }
-    // Start is called before the first frame update
-
     public void UpdateDisplayText()
     {
         stackCount++;

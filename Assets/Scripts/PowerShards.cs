@@ -2,13 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ObstacleManager : MonoBehaviour
+public class PowerShards : MonoBehaviour
 {
+    public MergedPlayer mergedplayer;
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            //player lose
+            ScoreManager.Instance.UpdateDisplayText();
+            mergedplayer.Upscale();
         }
     }
 }
