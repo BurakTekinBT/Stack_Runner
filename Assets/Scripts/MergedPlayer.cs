@@ -5,7 +5,7 @@ using UnityEngine.EventSystems;
 
 public class MergedPlayer : MonoBehaviour
 {
-    float scaleUp = 0.25f;
+    float scaleUp = 0.5f;
     public void Upscale()
     {
         transform.localScale = new Vector3(

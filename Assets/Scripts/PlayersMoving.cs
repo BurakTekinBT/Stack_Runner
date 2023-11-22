@@ -5,7 +5,7 @@ using UnityEngine.EventSystems;
 
 public class PlayersMoving : MonoBehaviour
 {
-    [SerializeField] private float _playerSpeed;
+    [SerializeField] public float _playerSpeed;
 
     void Update()
     {
